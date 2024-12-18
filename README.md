@@ -28,11 +28,15 @@ gpx-py is a python GPX parser. GPX (GPS eXchange Format) is an XML based file fo
 
 ## 3、模型测试
 
-需要安装 python 执行环境，并安装依赖库 gpxpy
+安装依赖
 
 ```bash
-pip install gpxpy
+pip install -r requirement.txt
+```
 
+执行脚本
+
+```bash
 python ./parse-gpx.py
 ```
 

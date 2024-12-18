@@ -20,17 +20,14 @@ for track in gpx.tracks:
         for point in segment.points:
             print('Point at ({0},{1}) -> {2},{3}'.format( point.latitude, point.longitude, point.elevation, point.geoid_height))
 
-
 # 4 路线
 for waypoint in gpx.waypoints:
     print('waypoint {0} -> ({1},{2},{3})'.format( waypoint.name, waypoint.latitude, waypoint.longitude, waypoint.elevation))
-
 
 # 5 坐标点
 for route in gpx.routes:
     for point in route.points:
         print('Point at ({0},{1}) -> {2}'.format( point.latitude, point.longitude, point.name ))
-
 
 # 6 转换成的 XML 文件
 print('GPX:', gpx.to_xml())
